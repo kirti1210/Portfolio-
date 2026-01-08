@@ -385,3 +385,121 @@ form btn2{
         font-size: 16px;
     }
 }
+/* ================= MOBILE RESPONSIVE FIX ================= */
+
+/* GENERAL FIX */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .container {
+        padding: 40px 30px;
+    }
+
+    .header-text h1 {
+        font-size: 42px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #header {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 140px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header-text {
+        margin-top: 30%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-col-1,
+    .about-col-2,
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 img {
+        width: 70%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .sub-title {
+        font-size: 36px;
+    }
+
+    .tab-titles {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tab-links {
+        margin: 10px;
+    }
+
+    .work-list {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .layer {
+        font-size: 13px;
+        padding: 20px;
+    }
+
+    .contact-left p {
+        font-size: 16px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+}
+
+/* MOBILE PORTFOLIO TAP FIX */
+.work.active .layer {
+    height: 100%;
+}
